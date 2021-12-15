@@ -1,3 +1,4 @@
+/* FORMAT CSS */
 * {
   margin: 0;
   padding: 0;
@@ -34,16 +35,9 @@ body {
   left: 0;
   margin: auto;
   width: 100%;
-}
-
-.nav-links li {
-  font-size: 16px;
-  text-align: center;
-  padding: 15px 30px;
-}
-
-.navbar li a {
-  display: block;
+  border-bottom: 1px solid #eee;
+  box-shadow: 2px 1px #eee;
+  opacity: 0.95;
 }
 
 .navbar-brand {
@@ -52,6 +46,9 @@ body {
   align-items: center;
   font-size: 20px;
   order: 1;
+}
+.logo {
+  width: 150px;
 }
 
 .navbar {
@@ -70,6 +67,12 @@ body {
   justify-content: flex-end;
   align-items: center;
   order: 3;
+}
+
+.nav-links li {
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 30px;
 }
 
 .nav-links {
@@ -112,10 +115,15 @@ body {
   color: #8c8c8c;
 }
 
-.about-us {
-  padding: 85px 15px;
+.about-us,
+.services {
+  padding: 85px 30px;
 }
-.about-title {
+.details {
+  padding-bottom: 90px;
+}
+.about-title,
+.services-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -123,9 +131,45 @@ body {
   color: #383838;
   padding: 45px 0;
 }
+.service-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  flex: 1;
+  border-radius: 10px;
+  padding: 20px 25px;
+  height: 320px;
+  box-sizing: border-box;
+  margin: 30px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.08);
+  transition: all ease 0.3s;
+}
+
+.img-icon {
+  width: 120px;
+  text-align: center;
+}
+
+.box-title {
+  color: #383838;
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+.box-desc {
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
 @media (min-width: 992px) {
   .navbar-brand {
-    padding-left: 30px;
+    padding-left: 20px;
   }
   .navbar-toggle {
     display: none;
@@ -164,8 +208,16 @@ body {
     text-align: center;
     order: 2;
   }
+  .services-description {
+    text-align: center;
+  }
   .about-image {
     flex-basis: 50%;
     order: 1;
+  }
+  .service-box {
+    max-width: 1480px;
+    flex-direction: row;
+    margin: 0 auto;
   }
 }
