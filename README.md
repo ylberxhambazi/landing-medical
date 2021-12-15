@@ -1,1 +1,7 @@
-# Create landing page theme for medical
+# Theme for medical
+
+### Created with:
+
+- HTML
+- CSS
+- JavaScript
