@@ -30,7 +30,7 @@ body {
 
 /* NAVBAR */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   margin: auto;
@@ -115,15 +115,23 @@ body {
   color: #8c8c8c;
 }
 
+.content {
+  padding-top: 40px;
+}
+
 .about-us,
-.services {
+.services,
+.team,
+.brand {
   padding: 85px 30px;
 }
 .details {
   padding-bottom: 90px;
 }
 .about-title,
-.services-title {
+.services-title,
+.team-title,
+.brand-title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -138,7 +146,7 @@ body {
   align-items: center;
 }
 
-.box {
+.box-services {
   flex: 1;
   border-radius: 10px;
   padding: 20px 25px;
@@ -166,6 +174,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+.scrollToTop a {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 7px 12px;
+  background: #da1f3d;
+  box-shadow: rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 992px) {
   .navbar-brand {
